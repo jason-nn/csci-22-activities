@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <title>CSS Keyframes Start</title>
+
+    <style>
+      body {
+        font-family: 'Roboto Condensed', sans-serif;
+        background-color: #e3e3ff;
+        color: black;
+        /* Zero out the margins and the paddings to
+        eliminate possible unwanted gaps near
+        the edges of the browser. */
+        padding: 0;
+        margin: 0;
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: .5em;
+        text-align: justify;
+      }
+
+      #winter {
+        width: 500px;
+        margin: 100px auto;
+        padding: 20px;
+        border-radius: 15px;
+        text-shadow: 1px 1px white;
+        background-color: rgba(255,255,255,.3);
+      }
+
+      #winter > :nth-child(3) {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="winter">
+      <h1>Winter</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      ullamcorper metus vitae dolor placerat lacinia. Vivamus sed purus quis
+      nisl ultrices congue. Nulla facilisi. Etiam risus nisl, rhoncus ac
+      tristique in, hendrerit id ex. Proin congue leo nec nibh volutpat,
+      quis pretium turpis tristique. Pellentesque mattis nec ex sit amet
+      mattis. Etiam finibus fringilla sem. Suspendisse efficitur rhoncus
+      urna ac ornare. Maecenas ultrices, risus vitae iaculis egestas, leo
+      nulla euismod.</p>
+      <p>Try and animate the other elements as well!</p>
+    </div>
+
+    <div id="mountains"></div>
+    <div id="trees"></div>
+
+  </body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>CSS GRID DONE</title>
+
+    <style>
+
+      body {
+        font-family: 'Varela Round', sans-serif;
+        text-transform: uppercase;
+      }
+
+      #grid-container1 {
+        border: solid black 4px;
+        border-radius: 10px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(4, 50px);
+        gap: 5px;
+        grid-template-areas:
+          "header header header"
+          "left middle right"
+          "left middle right"
+          "footer footer footer";
+      }
+
+      #grid-container1 > div {
+        border: solid black 1px;
+      }
+
+      #apple {
+        background-color: #ff6961;
+        grid-area: footer;
+      }
+
+      #banana {
+        background-color: #fdfd96;
+        grid-area: left;
+      }
+
+      #carrot {
+        background-color: #ffb347;
+        grid-area: right;
+      }
+
+      #dog {
+        background-color: #836853;
+        grid-area: header;
+      }
+
+      #elephant {
+        background-color: #cfcfc4;
+        grid-area: middle;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="grid-container1">
+      <div id="apple">Apple</div>
+      <div id="banana">Banana</div>
+      <div id="carrot">Carrot</div>
+      <div id="dog">Dog</div>
+      <div id="elephant">Elephant</div>
+    </div>
+
+  </body>
+  
+</html>
