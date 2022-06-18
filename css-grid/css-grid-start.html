@@ -18,30 +18,68 @@
         border: solid black 4px;
         border-radius: 10px;
         padding: 5px;
+
+        display: grid;
+        grid-template-columns: 1fr 200px 1fr;
+        grid-template-rows: repeat(4, 50px);
+
+        gap: 20px;
+
+        grid-template-areas:
+          'top top top'
+          'left middle right'
+          'left middle right'
+          'bottom bottom bottom';
       }
 
       #grid-container1 > div {
         border: solid black 1px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       #apple {
         background-color: #ff6961;
+        opacity: 0.8;
+
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        z-index: 1;
       }
 
       #banana {
         background-color: #fdfd96;
+        opacity: 0.8;
+
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
       }
 
       #carrot {
         background-color: #ffb347;
+        opacity: 0.8;
+
+        grid-area: top;
       }
 
       #dog {
         background-color: #836853;
+        opacity: 0.8;
+
+        grid-area: left;
       }
 
       #elephant {
         background-color: #cfcfc4;
+        opacity: 0.8;
+
+        grid-column: 2 / 3;
+        grid-row: 2 / 5;
       }
     </style>
   </head>
