@@ -129,9 +129,15 @@ nav > ul > li:hover {
 }
 
 main {
-  width: 50vw;
-  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 
+  padding-top: 60px;
+
+  min-height: calc(100vh - 60px);
+}
+
+#content {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -193,51 +199,48 @@ p {
   }
 }
 
-.doodles img {
+#doodles-left,
+#doodles-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  align-items: center;
+  justify-items: center;
+
+  padding: 30px;
+  animation: wobble 2s linear infinite;
+}
+
+#doodles-left > img,
+#doodles-right > img {
   width: 100px;
   height: auto;
-
-  position: fixed;
 }
 
 #doodle-122 {
-  top: 140px;
-  left: 70px;
-
-  animation: wobble 2s infinite;
+  grid-row: 1;
 }
 
 #doodle-97 {
-  top: 350px;
-  left: 140px;
-
-  animation: wobble-reverse 2s infinite;
+  grid-row: 2;
+  grid-column: 2;
 }
 
 #doodle-135 {
-  top: 560px;
-  left: 70px;
-
-  animation: wobble 2s infinite;
+  grid-row: 3;
 }
 
 #doodle-21 {
-  top: 140px;
-  right: 70px;
-
-  animation: wobble-reverse 2s infinite;
+  grid-row: 1;
+  grid-column: 2;
 }
 
 #doodle-72 {
-  top: 350px;
-  right: 140px;
-
-  animation: wobble 2s infinite;
+  grid-row: 2;
 }
 
 #doodle-44 {
-  top: 560px;
-  right: 70px;
-
-  animation: wobble-reverse 2s infinite;
+  grid-row: 3;
+  grid-column: 2;
 }
