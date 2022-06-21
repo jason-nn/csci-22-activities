@@ -209,7 +209,6 @@ p {
   justify-items: center;
 
   padding: 30px;
-  animation: wobble 2s linear infinite;
 }
 
 #doodles-left > img,
@@ -220,27 +219,33 @@ p {
 
 #doodle-122 {
   grid-row: 1;
+  animation: wobble 2s linear infinite;
 }
 
 #doodle-97 {
   grid-row: 2;
   grid-column: 2;
+  animation: wobble-reverse 2s linear infinite;
 }
 
 #doodle-135 {
   grid-row: 3;
+  animation: wobble 2s linear infinite;
 }
 
 #doodle-21 {
   grid-row: 1;
   grid-column: 2;
+  animation: wobble 2s linear infinite;
 }
 
 #doodle-72 {
   grid-row: 2;
+  animation: wobble-reverse 2s linear infinite;
 }
 
 #doodle-44 {
   grid-row: 3;
   grid-column: 2;
+  animation: wobble 2s linear infinite;
 }
