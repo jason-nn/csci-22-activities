@@ -142,6 +142,8 @@ main {
 h2 {
   font-size: 25px;
   font-family: CircularStd-Bold;
+
+  text-align: center;
 }
 
 section {
