@@ -95,11 +95,11 @@ header {
 }
 
 header > div {
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-
-  gap: 30px;
 }
 
 h1 {
