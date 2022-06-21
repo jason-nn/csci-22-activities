@@ -74,7 +74,7 @@ input {
 }
 
 ::selection {
-  color: #1d4ed8;
+  color: #4f42ec;
   background-color: #eff6ff;
 }
 
@@ -109,7 +109,7 @@ h1 {
 
   text-transform: lowercase;
 
-  color: #1d4ed8;
+  color: #4f42ec;
 }
 
 nav > ul {
@@ -119,13 +119,13 @@ nav > ul {
   gap: 30px;
 
   font-family: CircularStd-Bold;
-  font-size: 15px;
+  font-size: 18px;
 
   text-transform: lowercase;
 }
 
 nav > ul > li:hover {
-  color: #1d4ed8;
+  color: #4f42ec;
 }
 
 main {
@@ -252,4 +252,88 @@ p {
   grid-row: 3;
   grid-column: 2;
   animation: wobble 2s linear infinite;
+}
+
+#hero {
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 60px;
+
+  display: grid;
+  grid-template-columns: 5.5fr 4.5fr;
+  grid-template-rows: auto;
+
+  animation: day-to-night 8s infinite both;
+  animation-delay: 4s;
+}
+
+#hero-left {
+  font-size: 80px;
+  font-family: CircularStd-Bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#hero-right > img {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  right: -100px;
+  animation: revolution 8s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite both;
+}
+
+#hero-right > .delayed {
+  animation-delay: 4s;
+}
+
+@keyframes day-to-night {
+  0% {
+    background-color: #f8f9fb;
+    color: #4f42ec;
+  }
+
+  50% {
+    background-color: #4f42ec;
+    color: #f8f9fb;
+  }
+
+  100% {
+    background-color: #f8f9fb;
+    color: #4f42ec;
+  }
+}
+
+@keyframes revolution {
+  0% {
+    -webkit-transform: translateX(800px) rotateY(-30deg) scale(0);
+    transform: translateX(800px) rotateY(-30deg) scale(0);
+    -webkit-transform-origin: -100% 50%;
+    transform-origin: -100% 50%;
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateX(0) rotateY(0) scale(1);
+    transform: translateX(0) rotateY(0) scale(1);
+    -webkit-transform-origin: -1800px 50%;
+    transform-origin: -1800px 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px) rotateY(20deg) scale(6);
+    transform: translateX(1000px) rotateY(20deg) scale(6);
+    -webkit-transform-origin: -100% 50%;
+    transform-origin: -100% 50%;
+    opacity: 1;
+  }
 }
