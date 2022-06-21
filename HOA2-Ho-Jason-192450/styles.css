@@ -170,3 +170,74 @@ p {
   font-family: CircularStd-Book;
   line-height: 200%;
 }
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes wobble-reverse {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.doodles img {
+  width: 100px;
+  height: auto;
+
+  position: fixed;
+}
+
+#doodle-122 {
+  top: 140px;
+  left: 70px;
+
+  animation: wobble 2s infinite;
+}
+
+#doodle-97 {
+  top: 350px;
+  left: 140px;
+
+  animation: wobble-reverse 2s infinite;
+}
+
+#doodle-135 {
+  top: 560px;
+  left: 70px;
+
+  animation: wobble 2s infinite;
+}
+
+#doodle-21 {
+  top: 140px;
+  right: 70px;
+
+  animation: wobble-reverse 2s infinite;
+}
+
+#doodle-72 {
+  top: 350px;
+  right: 140px;
+
+  animation: wobble 2s infinite;
+}
+
+#doodle-44 {
+  top: 560px;
+  right: 70px;
+
+  animation: wobble-reverse 2s infinite;
+}
