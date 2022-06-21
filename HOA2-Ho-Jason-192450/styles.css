@@ -129,11 +129,40 @@ nav > ul > li:hover {
 
 main {
   width: 50vw;
-  margin: 60px auto 0px;
+  margin: 60px auto;
 
   display: flex;
   flex-direction: column;
   gap: 20px;
 
   padding: 30px 0px;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: CircularStd-Bold;
+}
+
+section {
+  background: #ffffff;
+  border-radius: 16px;
+
+  padding: 30px 45px;
+
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: CircularStd-Medium;
+}
+
+p {
+  font-size: 15px;
+  font-family: CircularStd-Book;
 }
