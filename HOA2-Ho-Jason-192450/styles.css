@@ -285,6 +285,10 @@ p {
   text-transform: lowercase;
 }
 
+#hero-left a span {
+  border-bottom: 2px solid;
+}
+
 #hero-right {
   position: relative;
   display: flex;
