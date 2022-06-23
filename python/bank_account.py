@@ -11,7 +11,7 @@ class BankAccount:
         if amount > 0:
             self.balance += amount
             puts(f'You just deposited ${amount}')
-            self.check_balance()
+            self.get_balance()
         else:
             puts('Invalid deposit amount')
 
@@ -19,11 +19,11 @@ class BankAccount:
         if self.balance >= amount:
             self.balance -= amount
             puts(f'You just withdrew ${amount}')
-            self.check_balance()
+            self.get_balance()
         else:
             puts('Insufficient balance')
 
-    def check_balance(self):
+    def get_balance(self):
         puts(f'Your current balance is ${self.balance}')
 
     def get_account_name(self):
@@ -34,7 +34,7 @@ jason = BankAccount('Jason Ho', 1000)
 
 jason.get_account_name()
 
-jason.check_balance()
+jason.get_balance()
 
 jason.deposit(200)
 
