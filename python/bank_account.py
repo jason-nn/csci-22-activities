@@ -1,29 +1,38 @@
+def puts(str):
+    print('{}\n'.format(str))
+
+
 class BankAccount:
     def __init__(self, account_name, balance):
-        self.account_name = account_name
+        self.account_name = account_name.upper()
         self.balance = balance
 
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-            print('You just deposited ${}'.format(amount))
+            puts('You just deposited ${}'.format(amount))
             self.check_balance()
         else:
-            print('Invalid deposit amount')
+            puts('Invalid deposit amount')
 
     def withdraw(self, amount):
         if self.balance >= amount:
             self.balance -= amount
-            print('You just withdrew ${}'.format(amount))
+            puts('You just withdrew ${}'.format(amount))
             self.check_balance()
         else:
-            print('Insufficient balance')
+            puts('Insufficient balance')
 
     def check_balance(self):
-        print('Your current balance is ${}'.format(self.balance))
+        puts('Your current balance is ${}'.format(self.balance))
+
+    def get_account_name(self):
+        puts('Your account name is {}'.format(self.account_name))
 
 
-jason = BankAccount('jason', 1000)
+jason = BankAccount('Jason Ho', 1000)
+
+jason.get_account_name()
 
 jason.check_balance()
 
