@@ -7,6 +7,9 @@ class BankAccount:
         self.account_name = account_name.upper()
         self.balance = balance
 
+    def __str__(self):
+        return f'Account Name: {self.account_name}\nBalance: {self.balance}\n'
+
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
@@ -43,3 +46,5 @@ jason.withdraw(300)
 jason.deposit(-20)
 
 jason.withdraw(905)
+
+print(jason)
