@@ -25,3 +25,8 @@ const listItemTwo = document.createElement('li');
 listItemTwo.textContent = 'List Item 2';
 
 mySection.append(listItem, listItemTwo);
+
+const groupTwo = document.getElementById('group2');
+const groupTwoParagraph = document.createElement('p');
+groupTwoParagraph.textContent = 'Group Two Paragraph';
+groupTwo.appendChild(groupTwoParagraph);
