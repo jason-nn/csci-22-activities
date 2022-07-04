@@ -265,7 +265,7 @@ input:-webkit-autofill:active {
   font-family: CircularStd-Medium;
 }
 
-.space-between {
+.space-between-buttons {
   display: flex;
   justify-content: space-between;
 
