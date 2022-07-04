@@ -1,0 +1,83 @@
+/*
+    Jason L. Ho, 192450
+    July 4, 2022
+
+    I certify that this submission complies with the DISCS Academic 
+    Integrity Policy.
+
+    If I have discussed my CSS code with anyone other than
+    my instructor(s), my groupmate(s), the teaching assistant(s),
+    the extent of each discussion has been clearly noted along with a
+    proper citation in the comments of my program.
+
+    If any CSS code or documentation used in my program was obtained 
+    from another source, either modified or unmodified, such as a textbook, 
+    website, or another individual, the extent of its use has been clearly 
+    noted along with a proper citation in the comments of my program.
+*/
+
+/*
+    SOURCES HERE
+*/
+
+@font-face {
+  font-family: CircularStd-Black;
+  src: url(fonts/CircularStd-Black.otf);
+}
+
+@font-face {
+  font-family: CircularStd-Bold;
+  src: url(fonts/CircularStd-Bold.otf);
+}
+
+@font-face {
+  font-family: CircularStd-Medium;
+  src: url(fonts/CircularStd-Medium.otf);
+}
+
+@font-face {
+  font-family: CircularStd-Book;
+  src: url(fonts/CircularStd-Book.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #1d1d1f;
+
+  /* backup fonts */
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+label,
+input {
+  display: block;
+}
+
+::selection {
+  color: #4f42ec;
+  background-color: #eff6ff;
+}
+
+* {
+  font-family: CircularStd-Black;
+}
