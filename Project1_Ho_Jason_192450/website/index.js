@@ -1,4 +1,7 @@
-let foodItems = 1;
+const foodLabels = Array.from(document.querySelectorAll('label')).filter(
+  (node) => node.textContent.startsWith('Food')
+);
+let foodItems = foodLabels.length / 2;
 const addFoodButton = document.querySelector('#add-food-button');
 const box = document.querySelector('.box');
 
