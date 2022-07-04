@@ -70,7 +70,7 @@
           <label for="food-1-quantity">Food 1 Quantity</label>
           <input type="number" id="food-1-quantity" />
         </div>
-        <div>
+        <div class="align-right">
           <button class="button-secondary" id="add-food-button">
             Add food
           </button>
@@ -101,10 +101,10 @@
         const optionOne = document.createElement('option');
         const optionTwo = document.createElement('option');
         const optionThree = document.createElement('option');
-        optionOne.value = 'beef-curry';
-        optionOne.textContent = 'Beef Curry';
-        optionTwo.value = 'chicken-curry';
-        optionTwo.textContent = 'Chicken Curry';
+        optionOne.value = 'chicken-curry';
+        optionOne.textContent = 'Chicken Curry';
+        optionTwo.value = 'beef-curry';
+        optionTwo.textContent = 'Beef Curry';
         optionThree.value = 'tonkatsu-curry';
         optionThree.textContent = 'Tonkatsu Curry';
         foodSelect.append(optionOne, optionTwo, optionThree);

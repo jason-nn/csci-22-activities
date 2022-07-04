@@ -81,7 +81,8 @@ input {
 nav {
   width: 100vw;
   height: 60px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: saturate(100%) blur(20px);
 
   z-index: 1;
   position: fixed;
