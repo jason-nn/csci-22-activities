@@ -95,18 +95,18 @@ nav {
   padding: 0px 60px;
 }
 
-nav > div {
+nav > a > div {
   display: flex;
   align-items: baseline;
   gap: 10px;
 }
 
-nav > div > img {
+nav > a > div > img {
   width: 30px;
   height: 30px;
 }
 
-nav > div > span {
+nav a > div > span {
   font-family: CircularStd-Black;
   font-size: 30px;
   color: #1d4ed8;
