@@ -144,3 +144,75 @@ button:hover {
   color: white;
   background-color: #1d4ed8;
 }
+
+main {
+  width: 40vw;
+  margin: 60px auto 0px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 30px 0px;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: CircularStd-Bold;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: CircularStd-Bold;
+}
+
+h3 {
+  font-size: 16px;
+  font-family: CircularStd-Medium;
+}
+
+.box {
+  background: #ffffff;
+  border-radius: 16px;
+
+  padding: 30px;
+
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  text-transform: uppercase;
+  color: #1d4ed8;
+  font-family: CircularStd-Bold;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+  background-color: #f4f6f8;
+  border-radius: 0px 16px;
+  padding: 10px 30px;
+  border: none;
+
+  font-size: 14px;
+  font-family: CircularStd-Bold;
+
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
