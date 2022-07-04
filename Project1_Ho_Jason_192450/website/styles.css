@@ -198,7 +198,8 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
   background-color: #f4f6f8;
   border-radius: 0px 16px;
   padding: 10px 30px;
@@ -214,7 +215,8 @@ select {
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -281,12 +283,12 @@ a:hover {
 
 .toast-message {
   background-color: white;
-  border: 1.5px solid #10b981;
+  border: 1.5px solid #1d4ed8;
 
   padding: 12px 30px;
   border-radius: 16px 0px;
 
-  color: #10b981;
+  color: #1d4ed8;
   font-size: 15px;
   font-family: CircularStd-Bold;
 
@@ -322,4 +324,11 @@ a:hover {
 
   font-size: 14px;
   font-family: CircularStd-Medium;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+
+  line-height: 200%;
 }
