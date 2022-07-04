@@ -314,3 +314,12 @@ a:hover {
 
   gap: 5px;
 }
+
+.food-list {
+  display: grid;
+  grid-template-columns: 2fr 2fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: auto;
+
+  font-size: 14px;
+  font-family: CircularStd-Medium;
+}
