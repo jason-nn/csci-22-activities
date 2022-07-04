@@ -95,18 +95,18 @@ nav {
   padding: 0px 60px;
 }
 
-nav > a > div {
+.logo {
   display: flex;
   align-items: baseline;
   gap: 10px;
 }
 
-nav > a > div > img {
+.logo img {
   width: 30px;
   height: 30px;
 }
 
-nav a > div > span {
+.logo > span {
   font-family: CircularStd-Black;
   font-size: 30px;
   color: #1d4ed8;
