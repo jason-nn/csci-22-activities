@@ -1,0 +1,132 @@
+<!--
+    Jason L. Ho, 192450
+    July 4, 2022
+
+    I certify that this submission complies with the DISCS Academic 
+    Integrity Policy.
+
+    If I have discussed my HTML code with anyone other than
+    my instructor(s), my groupmate(s), the teaching assistant(s),
+    the extent of each discussion has been clearly noted along with a
+    proper citation in the comments of my program.
+
+    If any HTML code or documentation used in my program was obtained 
+    from another source, either modified or unmodified, such as a textbook, 
+    website, or another individual, the extent of its use has been clearly 
+    noted along with a proper citation in the comments of my program.
+-->
+
+<!--
+    SOURCES HERE
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grubfood</title>
+    <link rel="icon" href="../../images/logo.svg" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="../index.html" class="logo">
+          <img src="../../images/logo.svg" alt="logo" />
+          <span>grubfood</span>
+        </a>
+        <ul>
+          <li><a href="../customers/customers.html">Customers</a></li>
+          <li><a href="../foods/foods.html">Foods</a></li>
+          <li><a href="orders.html">Orders</a></li>
+        </ul>
+      </div>
+      <a href="../index.html">
+        <button class="button-secondary">Sign out</button>
+      </a>
+    </nav>
+    <main>
+      <div class="box">
+        <h1>Add order</h1>
+        <div>
+          <label for="customer">Customer</label>
+          <select name="customer" id="customer">
+            <option value="tanjiro-kamado">Tanjiro Kamado</option>
+            <option value="inosuke-hashibara">Inosuke Hashibara</option>
+            <option value="zenitsu-agatsuma">Zenitsu Agatsuma</option>
+          </select>
+        </div>
+        <div>
+          <label for="food-1">Food 1</label>
+          <select name="food-1" id="food-1">
+            <option value="beef-curry">Beef Curry</option>
+            <option value="chicken-curry">Chicken Curry</option>
+            <option value="tonkatsu-curry">Tonkatsu Curry</option>
+          </select>
+        </div>
+        <div>
+          <label for="food-1-quantity">Food 1 Quantity</label>
+          <input type="number" id="food-1-quantity" />
+        </div>
+        <div>
+          <button class="button-secondary" id="add-food-button">
+            Add food
+          </button>
+        </div>
+        <div class="align-right">
+          <a href="orders.html">
+            <button class="button-primary">Add order</button>
+          </a>
+        </div>
+      </div>
+    </main>
+    <script>
+      let foodItems = 1;
+      const addFoodButton = document.querySelector('#add-food-button');
+      const box = document.querySelector('.box');
+
+      addFoodButton.addEventListener('click', () => {
+        const foodDiv = document.createElement('div');
+
+        const foodLabel = document.createElement('label');
+        foodLabel.textContent = `Food ${foodItems + 1}`;
+        foodLabel.htmlFor = `food-${foodItems + 1}`;
+        foodDiv.append(foodLabel);
+
+        const foodSelect = document.createElement('select');
+        foodSelect.name = `food-${foodItems + 1}`;
+        foodSelect.id = `food-${foodItems + 1}`;
+        const optionOne = document.createElement('option');
+        const optionTwo = document.createElement('option');
+        const optionThree = document.createElement('option');
+        optionOne.value = 'beef-curry';
+        optionOne.textContent = 'Beef Curry';
+        optionTwo.value = 'chicken-curry';
+        optionTwo.textContent = 'Chicken Curry';
+        optionThree.value = 'tonkatsu-curry';
+        optionThree.textContent = 'Tonkatsu Curry';
+        foodSelect.append(optionOne, optionTwo, optionThree);
+        foodDiv.append(foodSelect);
+
+        const quantityDiv = document.createElement('div');
+
+        const quantityLabel = document.createElement('label');
+        quantityLabel.textContent = `Food ${foodItems + 1} Quantity`;
+        quantityLabel.htmlFor = `food-${foodItems + 1}-quantity`;
+        quantityDiv.append(quantityLabel);
+
+        const quantityInput = document.createElement('input');
+        quantityInput.type = 'number';
+        quantityInput.id = `food-${foodItems + 1}-quantity`;
+        quantityDiv.appendChild(quantityInput);
+
+        foodItems += 1;
+
+        box.insertBefore(foodDiv, addFoodButton.parentNode);
+        box.insertBefore(quantityDiv, addFoodButton.parentNode);
+      });
+    </script>
+  </body>
+</html>
