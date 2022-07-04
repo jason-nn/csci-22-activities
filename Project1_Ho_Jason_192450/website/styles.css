@@ -305,7 +305,7 @@ a:hover {
   margin-top: 30px;
 }
 
-.customer-view-orders div {
+.customer-view-orders > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -340,4 +340,16 @@ textarea {
 
   font-size: 14px;
   font-family: CircularStd-Medium;
+}
+
+.order-details > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+
+  margin-top: 15px;
+  font-size: 14px;
+  font-family: CircularStd-Medium;
+
+  gap: 5px;
 }
