@@ -111,3 +111,36 @@ nav > div > span {
   font-size: 30px;
   color: #1d4ed8;
 }
+
+button {
+  border-radius: 16px 0px;
+  padding: 8px 20px;
+
+  font-size: 15px;
+  font-family: CircularStd-Bold;
+
+  cursor: pointer;
+
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+
+  transition: all 0.1s ease-in-out;
+
+  scale: 1;
+
+  border: 1.5px solid #1d4ed8;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.button-secondary {
+  color: #1d4ed8;
+  background-color: white;
+}
+
+.button-primary {
+  color: white;
+  background-color: #1d4ed8;
+}
