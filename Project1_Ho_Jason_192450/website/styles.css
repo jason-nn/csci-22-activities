@@ -200,7 +200,7 @@ input {
   border: none;
 
   font-size: 14px;
-  font-family: CircularStd-Bold;
+  font-family: CircularStd-Medium;
 
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
@@ -241,4 +241,12 @@ nav ul > li:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+/* removes autocomplete color change */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
 }
