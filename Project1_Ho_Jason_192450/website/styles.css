@@ -317,7 +317,7 @@ a:hover {
   gap: 5px;
 }
 
-.food-list {
+#food-list {
   display: grid;
   grid-template-columns: 2fr 2fr 0.5fr 0.5fr 0.5fr;
   grid-template-rows: auto;
