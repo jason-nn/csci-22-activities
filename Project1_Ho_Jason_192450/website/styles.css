@@ -74,6 +74,40 @@ input {
 }
 
 ::selection {
-  color: #4f42ec;
+  color: #1d4ed8;
   background-color: #eff6ff;
+}
+
+nav {
+  width: 100vw;
+  height: 60px;
+  background-color: #ffffff;
+
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0px 60px;
+}
+
+nav > div {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+nav > div > img {
+  width: 30px;
+  height: 30px;
+}
+
+nav > div > span {
+  font-family: CircularStd-Black;
+  font-size: 30px;
+  color: #1d4ed8;
 }
